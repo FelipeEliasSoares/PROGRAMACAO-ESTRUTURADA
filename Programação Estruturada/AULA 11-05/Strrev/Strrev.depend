@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1652272150 source:c:\users\aluno\desktop\strrev\main.cpp
+	<iostream>
+	<cstring>
+

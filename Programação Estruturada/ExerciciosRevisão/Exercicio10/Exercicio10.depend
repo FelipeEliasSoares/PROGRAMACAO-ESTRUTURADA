@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1655476284 source:c:\users\emers\desktop\revisão\exercicio10\main.cpp
+	<iostream>
+	<cstring>
+	<stdio.h>
+	<locale>
+	<fstream>
+

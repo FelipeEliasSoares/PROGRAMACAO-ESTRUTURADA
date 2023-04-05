@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1652277969 source:c:\users\aluno\desktop\chato\main.cpp
+	<iostream>
+	<cstring>
+

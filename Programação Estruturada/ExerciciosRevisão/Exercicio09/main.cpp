@@ -1,0 +1,76 @@
+#include <iostream>
+#include <cstring>
+#include <stdio.h>
+#include <locale>
+using namespace std;
+
+int main()
+{
+    int qtd,i;
+
+    cout << "Quantos animais voce vai cadastrar? ";
+    cin >> qtd;
+
+    struct EstrutaPET
+    {
+       char nomePET[60];
+       char especie[40];
+       char raca[40];
+       char sexo[2];
+       char idade[10];
+       char nomeDono[20];
+       char rg[15];
+       char telefone[10];
+    }strPET[qtd];
+
+    for(i=0;i<qtd;i++){
+        cout << "INFORME O NOME DO PET:  ";
+        cin >>strPET[i].nomePET;
+        fflush(stdin);
+
+        cout << "INFORME A ESPECIE DO PET: ";
+        cin.getline(strPET[i].especie,40);
+        fflush(stdin);
+
+        cout << "INFORME A RACA DO PET: ";
+        cin.getline(strPET[i].raca,40);
+        fflush(stdin);
+
+        cout << "INFORME O SEXO DO PET: ";
+        cin.getline(strPET[i].sexo,2);
+        fflush(stdin);
+
+        cout << "INFORME A IDADE DO PET: ";
+        cin.getline(strPET[i].idade,10);
+        fflush(stdin);
+
+        cout << "INFORME O NOME DO DONO DO PET: ";
+        cin.getline(strPET[i].nomeDono,20);
+        fflush(stdin);
+
+        cout << "INFORME O RG DO DONO DO PET: ";
+        cin.getline(strPET[i].rg,40);
+        fflush(stdin);
+
+        cout << "INFORME O TELEFONE DO DONO DO PET: ";
+        cin.getline(strPET[i].telefone,40);
+        fflush(stdin);
+
+        cout << endl;
+    };
+
+    cout << "Cliente cadatrado com sucesso!" << endl;
+
+    for(i=0;i<qtd;i++){
+        cout << "NOME DO PET: " << strPET[i].nomePET << endl;
+        cout << "ESPECIE DO PET: " << strPET[i].especie << endl;
+        cout << "RACA DO PET: " << strPET[i].raca << endl;
+        cout << "SEXO DO PET: " << strPET[i].sexo << endl;
+        cout << "IDADE DO PET: " << strPET[i].idade << endl;
+        cout << "NOME DO DONO DO PET: " << strPET[i].nomeDono << endl;
+        cout << "RG: " << strPET[i].rg << endl;
+        cout << "TELEFONE: " << strPET[i].telefone << endl;
+        cout << endl;
+    }
+
+}

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1652270495 source:c:\users\aluno\desktop\strcamp\main.cpp
+	<iostream>
+	<locale>
+	<cstring>
+

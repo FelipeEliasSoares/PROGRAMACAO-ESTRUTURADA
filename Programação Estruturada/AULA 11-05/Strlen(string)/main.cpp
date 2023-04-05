@@ -1,0 +1,14 @@
+#include <iostream>
+#include <locale>
+#include <cstring>
+
+using namespace std;
+
+int main()
+{
+    char palavra[20];
+    cout << "Digite uma palavra: " << endl;
+    cin >> palavra;
+    cout << "A palavra tem " << strlen(palavra) << " letras." << endl;
+    return 0;
+}

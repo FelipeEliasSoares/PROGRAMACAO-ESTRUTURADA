@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1652268173 source:c:\users\aluno\desktop\string(nome)\main.cpp
+	<iostream>
+	<locale>
+	<cstring>
+
